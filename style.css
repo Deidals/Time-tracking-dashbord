@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("Barlow_Semi_Condensed,Rubik/Rubik/static/Rubik-Regular.ttf") format("truetype");
+    font-style: normal;
+}
+@font-face {
+    font-family: "Rubik Light";
+    src: url("Barlow_Semi_Condensed,Rubik/Rubik/static/Rubik-Light.ttf") format("truetype");
+}
+
+.attribution {
+    font-size: 11px; text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+body{
+    background-color: hsl(226, 43%, 10%);
+    height: 100vh;
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+section{
+    border-radius: 1rem;
+    width: 340px;
+    height: 180px;
+    position: relative;
+    overflow: hidden;   
+}
+
+.bigcontainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px
+}
+.background{
+    position: absolute;
+    z-index: 1;
+    height: 35%;
+    width: 100%;
+}
+
+.headercontainer{
+    position: absolute;
+    z-index: 2;
+    height: 75%;
+    background-color:hsl(246, 80%, 60%);
+    width: 100%;
+    border-radius: 0.5rem;  
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 70px 200px;
+    gap: 20px;
+}
+.nameContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+h3{
+    font-family: "Rubik";
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+}
+h4{
+    color: white;
+    font-weight: 400;
+    font-family: "Rubik Light";
+    font-size: 40px;
+    align-self: flex-end;
+}
+#card02 {
+    background: hsl(15, 100%, 70%) url('images/icon-work.svg') no-repeat top -11px right 20px;
+}
+
+#card03{
+    background: hsl(195, 74%, 62%) url('images/icon-play.svg') no-repeat top -11px right 20px;
+}
+
+#card04{
+    background: hsl(348, 100%, 68%) url('images/icon-study.svg') no-repeat top -11px right 20px;
+}
+
+#card05{
+    background: hsl(145, 58%, 55%) url('images/icon-exercise.svg') no-repeat top -11px right 20px;
+}
+
+#card06{
+    background: hsl(264, 64%, 52%) url('images/icon-social.svg') no-repeat top -11px right 20px;
+}
+
+#card07{
+    background: hsl(43, 84%, 65%) url('images/icon-self-care.svg') no-repeat top -11px right 20px;
+}
+
+header{
+    position: relative;
+    width: 340px;
+    height: 150px;
+    border-radius: 0.5rem;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+h1{
+    font-family: "Rubik Light";
+    font-weight: 300;
+    font-size: 15px;
+    color: hsl(236, 100%, 87%);
+}
+h2{
+    font-family: "Rubik";
+    font-weight: 300;
+    font-size: 25px;
+    color: hsl(236, 100%, 87%);
+    font-weight: 300;
+}
+ol{
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 73%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(235, 46%, 20%);
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    font-family: "Rubik";
+    
+}
+ol button{
+    color: hsl(236, 100%, 87%);
+    width: 100%;
+    font-family: "Rubik";
+    font-weight: 500;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 15px;
+}
+
+li button{
+    font-size: inherit;
+}
+
+.card{
+    position: absolute;
+    top: 23%;
+    height: 70%;
+    background-color: hsl(235, 46%, 20%);
+    z-index: 2;
+    border-radius: 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 18px 40px;
+    column-gap: 20%;
+    row-gap: 20%;
+    padding: 6%;
+    
+}
+
+button{
+    width: 22px;
+    background: none; /* Remove default background */
+    border: none; /* Remove default border */
+    padding: 0; /* Remove padding */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    justify-self: right;
+}
+span{
+    font-family: "Rubik";
+    align-self: flex-end;
+    justify-self: right;
+    color: hsl(236, 100%, 87%);
+    font-weight: 300;
+
+}
+button svg:hover path{
+    fill: white;
+    color: white;
+}
+
+img{
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    border: 5px solid white;
+    border-radius: 50%;
+    size: 30%;
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        display: flex; /* Use flexbox for centering */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        height: 100vh; /* Full viewport height */
+        margin: 0; /* Remove default body margin */
+        padding: 0 9%;
+    }
+    .bigcontainer {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr 3fr; /* Define two columns: 1 fraction and 3 fractions */
+        grid-template-rows: 500px 100px; /* Set the row height to 400px */
+    }
+    header {
+        margin: 0;
+        grid-row: 1 / 2;
+        height: 100%;
+    }
+    footer{
+        grid-column: 1/-1;
+    }
+    main{
+        column-gap: 30px;
+        row-gap: 20px;
+        grid-row: 1/2;
+    }
+    section{
+        width: 30%;
+        height: 240px;
+    }
+    .card{
+        top: 17%;
+        height: 86%;
+    }
+}

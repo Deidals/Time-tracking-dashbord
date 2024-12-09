@@ -1,6 +1,6 @@
 async function fetchAndUseData() {
     try {
-      const response = await fetch('/data.json');
+      const response = await fetch('data.json');
       if (!response.ok) {
         console.log('Oops! Something went wrong.');
         return;

@@ -20,9 +20,9 @@
         </div>
       </div>
       <ol>
-        <li><button type="button">Daily</button></li>
-        <li><button type="button">Weekly</button></li>
-        <li><button type="button">Monthly</button></li>
+        <li><button type="button" id="dailyButton">Daily</button></li>
+        <li><button type="button" id="weeklyButton">Weekly</button></li>
+        <li><button type="button" id="monthlyButton">Monthly</button></li>
       </ol>
     </header>
     <main>
@@ -34,8 +34,8 @@
             <button>
               <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
             </button>
-            <h4>5hrs</h4> <!-- daily -->
-            <span>Previous - 7hrs</span> <!-- daily -->
+            <h4 id="card0">5hr</h4> <!-- daily -->
+            <span id="cardPrevious0">Previous - 7hrs</span> <!-- daily -->
             <!-- 32hrs --> <!-- weekly -->
             <!-- Previous - 36hrs --> <!-- weekly -->
            <!--  103hrs --> <!-- monthly -->
@@ -50,8 +50,8 @@
             <button>
               <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
             </button>
-            <h4>1hr</h4> <!-- daily -->
-            <span>Previous - 2hrs</span> <!-- daily -->
+            <h4 id="card1">1hr</h4> <!-- daily -->
+            <span id="cardPrevious1">Previous - 2hrs</span> <!-- daily -->
             <!-- 10hrs --> <!-- weekly -->
             <!--  Previous - 8hrs--> <!-- weekly -->
            <!--  23hrs --> <!-- monthly -->
@@ -66,8 +66,8 @@
             <button>
               <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
             </button>
-            <h4>0hrs</h4> <!-- daily -->
-            <span>Previous - 1hr</span> <!-- daily -->
+            <h4 id="card2">0hrs</h4> <!-- daily -->
+            <span id="cardPrevious2">Previous - 1hr</span> <!-- daily -->
             <!-- 4hrs --> <!-- weekly -->
            <!--  Previous - 7hrs --> <!-- weekly -->
             <!-- 13hrs --> <!-- monthly -->
@@ -82,8 +82,8 @@
             <button>
               <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
             </button>
-            <h4>1hr</h4> <!-- daily -->
-            <span>Previous - 1hr</span> <!-- daily -->
+            <h4 id="card3">1hr</h4> <!-- daily -->
+            <span id="cardPrevious3">Previous - 1hr</span> <!-- daily -->
             <!-- 4hrs --> <!-- weekly -->
            <!--  Previous - 5hrs --> <!-- weekly -->
             <!-- 11hrs --> <!-- monthly -->
@@ -98,8 +98,8 @@
             <button>
               <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
             </button>
-            <h4>1hr</h4> <!-- daily -->
-            <span>Previous - 3hrs</span> <!-- daily -->
+            <h4 id="card4">1hr</h4> <!-- daily -->
+            <span id="cardPrevious4">Previous - 3hrs</span> <!-- daily -->
             <!-- 5hrs --> <!-- weekly -->
             <!-- Previous - 10hrs --> <!-- weekly -->
             <!-- 21hrs --> <!-- monthly -->
@@ -114,8 +114,8 @@
             <button>
               <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
             </button>
-            <h4>0hrs</h4> <!-- daily -->
-            <span>Previous - 1hr</span> <!-- daily -->
+            <h4 id="card5">0hrs</h4> <!-- daily -->
+            <span id="cardPrevious5">Previous - 1hr</span> <!-- daily -->
             <!-- 2hrs --> <!-- weekly -->
             <!-- Previous - 2hrs --> <!-- weekly -->
             <!-- 7hrs  --><!-- monthly -->
@@ -128,6 +128,6 @@
       Coded by <a href="#">Alqorni Trikandalas Ginting</a>.
     </footer>
   </div>
- 
+  <script src="main.js"></script>
 </body>
 </html>

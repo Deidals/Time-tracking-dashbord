@@ -1,6 +1,6 @@
 async function fetchAndUseData() {
     try {
-      const response = await fetch('data.json');
+      const response = await fetch('https://github.com/Deidals/Time-tracking-dashbord/blob/main/data.json');
       if (!response.ok) {
         console.log('Oops! Something went wrong.');
         return;

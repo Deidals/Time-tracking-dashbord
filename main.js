@@ -40,6 +40,9 @@ async function fetchAndUseData() {
       console.error('Error fetching data:', error);
     }
   }
-  
+  function functionName() {
+    // Code to be executed
+}
+
   fetchAndUseData();
   
